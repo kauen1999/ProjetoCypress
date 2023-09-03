@@ -4,11 +4,11 @@ describe('Registro de Usuário', () => {
     beforeEach (() => cy.visit('https://automationexercise.com/login'));
     it("Deve registrar um novo usuário preenchendo todos os campos com dados validos.", () => {
       
-      cy.get('[data-qa="signup-name"]').type('Jocean Ferreira da Silva Filho');
-      cy.get('[data-qa="signup-email"]').type('kauen1999@gmail.com');
+      cy.get('[data-qa="signup-name"]').type('Jocean Ferreira da Silva');
+      cy.get('[data-qa="signup-email"]').type('kauen212@gmail.com');
       cy.get('[data-qa="signup-button"]').click();
       cy.get('#id_gender1').check();
-      cy.get('[data-qa="password"]').type('Senh@2023');
+      cy.get('[data-qa="password"]').type('Senh@2022');
       cy.get('[data-qa="days"]').select('26');
       cy.get('[data-qa="months"]').select('June');
       cy.get('[data-qa="years"]').select('1999');
